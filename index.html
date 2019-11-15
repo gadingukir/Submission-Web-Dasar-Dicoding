@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>My Profile</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: black;
+            color: ivory;
+        }
+        .header {
+            color: ivory;
+            text-align: center;
+            font-size: 50px;
+            line-height: 20px;
+        }
+        .avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .column {
+            float: left;
+            padding: 50px;
+            
+        }
+        .column.side {
+            width: 30%;
+        }
+        .column.middle {
+            width: 40%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+        .card {
+            box-shadow: 0 0 4px 4px lightgoldenrodyellow;
+            transition: 0.3s;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .card:hover {
+            box-shadow: 0 0 8px 6px khaki;
+            width: 110%;
+        }
+        .container {
+            padding: 2px 16px;
+        }
+        .footer {
+            color: ivory;
+            font-size: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .icon {
+            margin-right: 35px;        
+        }
+        .logo:hover {
+            opacity: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Hi, I'm Gading</h2>
+        <p style="text-align: center; font-size: 25px;">A Beginner Web Developer</p>
+        <img src="img/Profile1.jpeg" alt="Avatar" class="avatar";>
+        <p style="font-size: 15px;">Age     : 27 years old</p>
+        <p style="font-size: 15px;">Phone   : +62812345678</p>
+        <p style="font-size: 15px;">Email   : gadingukir@gmail.com</p>
+    </div>
+    <p style="text-align: center; font-size: 35px; padding-top: 30px; margin-bottom: 20px;">My Interest</p>
+    <div class="row">
+        <div class="column side">
+            <div class="card">
+                <img src="img/Adventure.jpg" alt="Avatar" style="width: 100%;">
+                    <div class="container">
+                        <h4 style="color: lavender;">Adventure</h4>
+                        <p style="color: lavender;">The view that I really like is waterfall view</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="column middle">
+            <div class="card">
+                <img src="img/Saxophone1.jpg" alt="Avatar" style="width: 100%;">
+                    <div class="container">
+                        <h4 style="color: lavender;">Music</h4>
+                        <p style="color: lavender;">Saxophone is so cool !</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="column side">
+                <div class="card">
+                    <img src="img/Agriculture.jpg" alt="Avatar" style="width: 100%;">
+                        <div class="container">
+                            <h4 style="color: lavender;">Agriculture</h4>
+                            <p style="color: lavender;">I graduated from agriculture major, and i learn programming to provide alternative solutions to agricultural problems in Indonesia </p>
+                        </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="footer">
+        Find me in!
+        <ul class="icon">
+            <img src="png/001-instagram.png" alt="icon" style="padding-right: 10px;" class="logo">
+            <img src="png/002-facebook.png" alt="icon" style="padding-right: 10px;" class="logo">
+            <img src="png/003-linkedin.png" alt="icon" style="padding-right: 10px;" class="logo">
+            <img src="png/001-twitter.png" alt="icon" style="padding-right: 10px;" class="logo">
+        </ul>
+    </div>
+</body>
+</html>
